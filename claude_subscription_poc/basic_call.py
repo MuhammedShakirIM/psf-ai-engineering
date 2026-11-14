@@ -23,7 +23,7 @@ def main() -> None:
         messages=[{"role": "user", "content": prompt}],
     )
     print(response.choices[0].message.content)
-    print(f"\nTokens -> input: {response.usage.prompt_tokens}, output: {response.usage.completion_tokens}")
+    print(f"\nTokens -> input: {response.usage.prompt_tokens}, output: {response.usage.completion_tokens}") # type: ignore
 
 
 if __name__ == "__main__":
