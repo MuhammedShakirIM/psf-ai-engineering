@@ -1,0 +1,11 @@
+[project]
+name = "psf-ai-engineering"
+version = "0.1.0"
+description = "Learning PoCs for calling LLM APIs"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=2.8.0",
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+]
