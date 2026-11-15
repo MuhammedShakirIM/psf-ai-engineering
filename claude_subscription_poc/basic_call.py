@@ -9,6 +9,10 @@ from openai import OpenAI
 BASE_URL = "http://localhost:9001/v1"
 MODEL = "sonnet"  # adapter alias -> claude-sonnet-5-5
 
+# implementation of get_customer_by_name()
+# implementation of get_customer_invoices()
+# implementation of calculate_invoices_total()
+
 
 def main() -> None:
     client = OpenAI(base_url=BASE_URL, api_key="local")  # placeholder key
