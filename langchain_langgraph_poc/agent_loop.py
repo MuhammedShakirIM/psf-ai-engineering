@@ -128,6 +128,7 @@ def tools_node(state: AgentState) -> dict:
     return {"messages": results}
 
 
+ 
 def route_after_model(state: AgentState) -> str:
     if not state["messages"][-1].tool_calls:  # type: ignore
         return END
@@ -141,8 +142,10 @@ def build_graph():
     graph = StateGraph(AgentState)
     graph.add_node("model", model_node)
     graph.add_node("tools", tools_node)
+
     graph.add_edge(START, "model")
     graph.add_conditional_edges("model", route_after_model, ["tools", END])
+
     graph.add_edge("tools", "model")
     return graph.compile()
 
