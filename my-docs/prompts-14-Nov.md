@@ -47,3 +47,10 @@ for chunk in completion:
 
 1. Refer to the /Users/shakir/claude-subscription-adapter/README.md
 2. Create new PoC called claude_subscription_poc in this project. note that I have already started the server.
+
+
+## Poc with Langchain
+
+1. I want you to now add langchain dependency and implement a simple PoC demonstrating the very basic of creating the agent and invoking it in Langchain.
+2. Use the same structure : project-root/langchain_poc/
+3. Use GROQ API Key and Groq model via langchain . I have the API key already configured in .env

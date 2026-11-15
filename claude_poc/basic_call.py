@@ -20,7 +20,8 @@ def main() -> None:
         max_tokens=1024,
         betas=["server-side-fallback-2026-07-01"],
         fallbacks="default",  # if Sonnet 5.5 declines, the API retries on a fallback model
-        messages=[{"role": "user", "content": prompt}],
+
+        messages=[ {"role": "user", "content": prompt} ],
     )
 
     if response.stop_reason == "refusal":
