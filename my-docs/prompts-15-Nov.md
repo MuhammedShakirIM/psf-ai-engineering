@@ -8,3 +8,7 @@
 6. The agent must support the query like : Give me the list of invoices raised on John and the total of the invoices. 
 7. The focus is on understanding the agent loop hence to print each iteration details - what goes to the model and what comes back from the model - specially whether it is a tool call or a end turn
 
+## Agent loop with Langchain
+
+1. Check the previous section : "Agent Loop PoC" and also the code that is already generated :  agent_loop_poc/agent_loop.py
+2. Now build a new PoC in langchain_langgraph_poc implementating exact the same agent with same behavior but using langchain and langgraph.
